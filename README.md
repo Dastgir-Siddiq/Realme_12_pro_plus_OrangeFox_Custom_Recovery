@@ -18,7 +18,7 @@ Official OrangeFox Recovery Project R12.1 build for the **realme 12 Pro+ 5G** (c
 | File | Size | SHA-256 Checksum |
 | :--- | :--- | :--- |
 | `Realme_12_pro_plus_OrangeFox_Custom_Recovery.img` | 104,857,600 bytes (100 MB) | `397d7e95ff4046ad945edd2b38d0e4144ab7797be54b666071bd3fab3a1f4ccb` |
-| `Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip` | 29,948,175 bytes (~28.5 MB) | `9511c00bca455ad5561ddf9181cb8fc5185e85ba3153250cb509bbe8eab69cfd` |
+| `Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip` | 29,948,145 bytes (~28.5 MB) | `b6d9f4b5de37327473150246c40e5c237c9299c03355f5c917c1eecc3863510b` |
 
 To verify the integrity of the downloaded recovery image:
 ```bash
@@ -39,10 +39,9 @@ sha256sum -c SHA256SUMS
    ```bash
    fastboot devices
    ```
-3. Flash the recovery image to both slots:
+3. Flash the recovery image to the active slot:
    ```bash
-   fastboot flash recovery_a Realme_12_pro_plus_OrangeFox_Custom_Recovery.img
-   fastboot flash recovery_b Realme_12_pro_plus_OrangeFox_Custom_Recovery.img
+   fastboot flash recovery Realme_12_pro_plus_OrangeFox_Custom_Recovery.img
    ```
 4. Reboot into OrangeFox Recovery:
    ```bash

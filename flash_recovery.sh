@@ -19,13 +19,10 @@ echo "=========================================================="
 echo "[*] Waiting for device in Fastboot mode..."
 fastboot wait-for-device
 
-echo "[*] Flashing recovery image to slot A..."
-fastboot flash recovery_a "$IMG"
+echo "[*] Flashing recovery image to active slot..."
+fastboot flash recovery "$IMG"
 
-echo "[*] Flashing recovery image to slot B..."
-fastboot flash recovery_b "$IMG"
-
-echo "[+] Successfully flashed OrangeFox Recovery to both slots!"
+echo "[+] Successfully flashed OrangeFox Recovery!"
 echo "[*] Rebooting directly into Recovery..."
 fastboot reboot recovery
 echo "[+] Done!"

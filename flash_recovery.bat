@@ -18,23 +18,15 @@ echo ==========================================================
 echo [*] Checking connected Fastboot devices...
 fastboot devices
 
-echo [*] Flashing recovery image to slot A...
-fastboot flash recovery_a %IMG%
+echo [*] Flashing recovery image to active slot...
+fastboot flash recovery %IMG%
 if %errorlevel% neq 0 (
-    echo [-] Flashing slot A failed!
+    echo [-] Flashing recovery failed!
     pause
     exit /b %errorlevel%
 )
 
-echo [*] Flashing recovery image to slot B...
-fastboot flash recovery_b %IMG%
-if %errorlevel% neq 0 (
-    echo [-] Flashing slot B failed!
-    pause
-    exit /b %errorlevel%
-)
-
-echo [+] Successfully flashed OrangeFox Recovery to both slots!
+echo [+] Successfully flashed OrangeFox Recovery!
 echo [*] Rebooting directly into Recovery...
 fastboot reboot recovery
 echo [+] Done!
