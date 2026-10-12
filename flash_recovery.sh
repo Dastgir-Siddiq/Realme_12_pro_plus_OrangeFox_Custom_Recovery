@@ -5,7 +5,7 @@
 
 set -e
 
-IMG="OrangeFox-R12.1_AOSP-eng-STABLE-ferrarri.img"
+IMG="Realme_12_pro_plus_OrangeFox_Custom_Recovery.img"
 
 if [ ! -f "$IMG" ]; then
     echo "[-] Error: Recovery image file '$IMG' not found!"

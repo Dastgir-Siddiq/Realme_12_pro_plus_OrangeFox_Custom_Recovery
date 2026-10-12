@@ -3,7 +3,7 @@ rem OrangeFox Recovery Flashing Helper Script for Windows
 rem Device: realme 12 Pro+ 5G (ferrarri)
 rem Maintainer: Dastgir Siddiq
 
-set IMG=OrangeFox-R12.1_AOSP-eng-STABLE-ferrarri.img
+set IMG=Realme_12_pro_plus_OrangeFox_Custom_Recovery.img
 
 if not exist "%IMG%" (
     echo [-] Error: Recovery image file '%IMG%' not found!
