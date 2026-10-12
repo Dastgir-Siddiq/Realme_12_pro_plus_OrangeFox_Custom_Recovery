@@ -1,0 +1,16 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files and editor backups
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Scratch / build work directories
+scratch/
+out/
+build/
