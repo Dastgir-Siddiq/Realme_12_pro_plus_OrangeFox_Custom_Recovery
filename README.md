@@ -18,11 +18,12 @@ Official OrangeFox Recovery Project R12.1 build for the **realme 12 Pro+ 5G** (c
 | File | Size | SHA-256 Checksum |
 | :--- | :--- | :--- |
 | `Realme_12_pro_plus_OrangeFox_Custom_Recovery.img` | 104,857,600 bytes (100 MB) | `397d7e95ff4046ad945edd2b38d0e4144ab7797be54b666071bd3fab3a1f4ccb` |
-| `Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip` | 29,948,145 bytes (~28.5 MB) | `b6d9f4b5de37327473150246c40e5c237c9299c03355f5c917c1eecc3863510b` |
+| `Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip` | 29,919,317 bytes (~28.5 MB) | `6a83b84d7098b511a89b03551f56cff276fd14b7d2083cab2502131d96706ffe` |
 
-To verify the integrity of the downloaded recovery image:
+To verify the integrity of the downloaded files:
 ```bash
 sha256sum -c SHA256SUMS
+md5sum -c Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip.md5
 ```
 
 ---
@@ -50,10 +51,18 @@ sha256sum -c SHA256SUMS
 
 > **Automated Script:** You can also run `./flash_recovery.sh` (Linux/macOS) or double-click `flash_recovery.bat` (Windows).
 
-### Method 2: From Existing OrangeFox / TWRP Recovery
+### Method 2: Flashable ZIP in Custom Recovery (OrangeFox / TWRP)
 
-1. Copy `Realme_12_pro_plus_OrangeFox_Custom_Recovery.img` to your device's internal storage or USB OTG.
-2. In OrangeFox, tap **Files** $\rightarrow$ switch filter to **Install Image**.
+1. Copy `Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip` (and optional `Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip.md5`) to internal storage or USB OTG.
+2. In OrangeFox / TWRP, tap **Install** (or **Files**).
+3. Select `Realme_12_pro_plus_OrangeFox_Custom_Recovery.zip`.
+4. Swipe to confirm flash (flashes directly to the active slot with built-in checksum verification).
+5. Tap **Reboot Recovery**.
+
+### Method 3: Flash Image (.img) in OrangeFox / TWRP
+
+1. Copy `Realme_12_pro_plus_OrangeFox_Custom_Recovery.img` to internal storage or USB OTG.
+2. In OrangeFox / TWRP, tap **Files** $\rightarrow$ switch filter to **Install Image**.
 3. Select `Realme_12_pro_plus_OrangeFox_Custom_Recovery.img`.
 4. Choose the **Recovery** partition and swipe to confirm flash.
 5. Tap **Reboot** $\rightarrow$ **Recovery**.
